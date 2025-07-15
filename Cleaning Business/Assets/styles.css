@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff69b4, #ffffff); /* Pink to White Gradient */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f48fb1; /* Light pink background for nav */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4081; /* Darker pink for hover effect */
+}
+
+/* Header Section */
+header {
+    background-color: #ff69b4; /* Pink background for the header */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem; /* Larger font size for the company name */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/* Service Item Styling */
+.service-item {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    background-color: #fff; /* White background for each service */
+    border: 1px solid #ddd; /* Light gray border around each service */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item h3 {
+    color: #ff69b4; /* Pink color for service titles */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff4081; /* Soft pink button */
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Align button text */
+}
+
+button:hover {
+    background-color: #f48fb1; /* Lighter pink when hovered */
+}
+
+/* Add-on Services Title */
+h3.addon-services-title {
+    color: black; /* Set the color to black for the Add-on Services title */
+    font-size: 1.8rem; /* Make it similar size to the service titles */
+    margin-bottom: 15px;
+}
+
+/* Add-on Services List */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+}
+
+/* General Book Now Button */
+section button {
+    background-color: #ff69b4;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Slightly smaller title on mobile */
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem; /* Smaller nav links on mobile */
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+
+    .button-container {
+        justify-content: center; /* Center buttons on mobile */
+    }
+}
